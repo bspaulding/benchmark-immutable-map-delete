@@ -45,6 +45,20 @@ nKeys.forEach(function(n) {
 			return keys.indexOf(key) < 0;
 		});
 	});
+
+	suite.add("Map#filter w/ lookup n=" + n, function() {
+		var result = data.filter(function(v, k) {
+			return k <= 10000;
+		})
+	});
+
+	suite.add("Map#withMutations/delete n=" + n, function() {
+		data.withMutations(function(map) {
+			for (var i = 0; i < n; i += 1) {
+				map = map.delete(i);
+			}
+		})
+	});
 });
 
 suite.on('cycle', function(event) {

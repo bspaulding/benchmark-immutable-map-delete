@@ -1,0 +1,26 @@
+{
+  "name": "benchmark-immutable-map-delete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "benchmark": "2.1.1",
+    "immutable": "3.8.1",
+    "lodash": "4.15.0",
+    "microtime": "2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bspaulding/benchmark-immutable-map-delete.git"
+  },
+  "author": "Bradley J. Spaulding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bspaulding/benchmark-immutable-map-delete/issues"
+  },
+  "homepage": "https://github.com/bspaulding/benchmark-immutable-map-delete#readme"
+}
